@@ -285,6 +285,7 @@
             this.btnguncelle.TabIndex = 3;
             this.btnguncelle.Text = "GÜNCELLE";
             this.btnguncelle.UseVisualStyleBackColor = true;
+            this.btnguncelle.Click += new System.EventHandler(this.btnguncelle_Click);
             // 
             // btnsil
             // 
@@ -294,6 +295,7 @@
             this.btnsil.TabIndex = 2;
             this.btnsil.Text = "SİL";
             this.btnsil.UseVisualStyleBackColor = true;
+            this.btnsil.Click += new System.EventHandler(this.btnsil_Click);
             // 
             // btnkaydet
             // 
@@ -437,6 +439,7 @@
             this.label6.TabIndex = 56;
             this.label6.Text = "evli mi bekar mı?";
             this.label6.Visible = false;
+            this.label6.TextChanged += new System.EventHandler(this.label6_TextChanged);
             // 
             // Form1
             // 

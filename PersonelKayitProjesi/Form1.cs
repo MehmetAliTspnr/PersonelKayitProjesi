@@ -60,13 +60,16 @@ namespace PersonelKayitProjesi
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            label6.Text = "True";
+            if(radioButton1.Checked==true)
+            { label6.Text = "True"; }
+
 
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
-            label6.Text = "False";
+            if (radioButton2.Checked == true)
+            { label6.Text = "False"; }
         }
 
         private void btntemizle_Click(object sender, EventArgs e)
@@ -80,6 +83,51 @@ namespace PersonelKayitProjesi
             txtid.Text = dataGridView1.Rows[secilen].Cells[0].Value.ToString();
             txtad.Text = dataGridView1.Rows[secilen].Cells[1].Value.ToString();
             txtsoyad.Text = dataGridView1.Rows[secilen].Cells[2].Value.ToString();
+            cmbsehir.Text = dataGridView1.Rows[secilen].Cells[3].Value.ToString() ;
+            mskmaas.Text=dataGridView1.Rows[secilen].Cells[4].Value.ToString();
+            label6.Text= dataGridView1.Rows[secilen].Cells[5].Value.ToString();
+            txtmeslek.Text= dataGridView1.Rows[secilen].Cells[6].Value.ToString();
+
+
+
+        }
+
+        private void label6_TextChanged(object sender, EventArgs e)
+        {
+            if(label6.Text=="True")//Herhangi bir kolona tıklanıldığında radiobutton üzerinde degişiklik yapıyor.
+            { radioButton1.Checked = true; }
+            if(label6.Text=="False") 
+            {  radioButton2.Checked = true; }
+
+        }
+
+        private void btnsil_Click(object sender, EventArgs e)
+        {   //Kayit Silme işlemi kolona çift tıklayıp basınca siliniyor.Ancak tek tıkla silinmiyor.
+           
+            baglanti.Open();
+            SqlCommand komutsil=new SqlCommand("Delete From Tbl_Personel Where PERİD=@k1",baglanti);
+            komutsil.Parameters.AddWithValue("@k1", txtid.Text);
+            komutsil.ExecuteNonQuery();
+            baglanti.Close();
+            MessageBox.Show("KAYIT SİLİNDİ..." );
+        }
+
+        private void btnguncelle_Click(object sender, EventArgs e)
+        {
+            baglanti.Open();
+            SqlCommand komutguncelle = new SqlCommand("Update Tbl_personel Set PERAD=@a1,PERSOYAD=@a2,PERSEHİR=@a3,PERMAAS=@a4,PERDURUM=@a5,PERMESLEK=@a6 where PERİD=@a7", baglanti);
+            //id ye göre güncelleme sağlandı.
+            komutguncelle.Parameters.AddWithValue("@a1",txtad.Text);
+            komutguncelle.Parameters.AddWithValue("@a2", txtsoyad.Text);
+            komutguncelle.Parameters.AddWithValue("@a3", cmbsehir.Text);
+            komutguncelle.Parameters.AddWithValue("@a4", mskmaas.Text);
+            komutguncelle.Parameters.AddWithValue("@a5", label6.Text);
+            komutguncelle.Parameters.AddWithValue("@a6", txtmeslek.Text);
+            komutguncelle.Parameters.AddWithValue("@a7", txtid.Text);
+
+            komutguncelle.ExecuteNonQuery();
+            baglanti.Close();
+            MessageBox.Show("Personel Bilgi Güncellendi");
         }
     }
 }
