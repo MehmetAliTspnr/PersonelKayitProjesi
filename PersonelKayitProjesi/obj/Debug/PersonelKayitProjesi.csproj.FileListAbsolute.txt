@@ -1,0 +1,10 @@
+C:\Users\ASUS\source\repos\PersonelKayitProjesi\PersonelKayitProjesi\bin\Debug\PersonelKayitProjesi.exe.config
+C:\Users\ASUS\source\repos\PersonelKayitProjesi\PersonelKayitProjesi\bin\Debug\PersonelKayitProjesi.exe
+C:\Users\ASUS\source\repos\PersonelKayitProjesi\PersonelKayitProjesi\bin\Debug\PersonelKayitProjesi.pdb
+C:\Users\ASUS\source\repos\PersonelKayitProjesi\PersonelKayitProjesi\obj\Debug\PersonelKayitProjesi.csproj.AssemblyReference.cache
+C:\Users\ASUS\source\repos\PersonelKayitProjesi\PersonelKayitProjesi\obj\Debug\PersonelKayitProjesi.Form1.resources
+C:\Users\ASUS\source\repos\PersonelKayitProjesi\PersonelKayitProjesi\obj\Debug\PersonelKayitProjesi.Properties.Resources.resources
+C:\Users\ASUS\source\repos\PersonelKayitProjesi\PersonelKayitProjesi\obj\Debug\PersonelKayitProjesi.csproj.GenerateResource.cache
+C:\Users\ASUS\source\repos\PersonelKayitProjesi\PersonelKayitProjesi\obj\Debug\PersonelKayitProjesi.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\source\repos\PersonelKayitProjesi\PersonelKayitProjesi\obj\Debug\PersonelKayitProjesi.exe
+C:\Users\ASUS\source\repos\PersonelKayitProjesi\PersonelKayitProjesi\obj\Debug\PersonelKayitProjesi.pdb
