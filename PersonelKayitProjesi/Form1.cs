@@ -129,5 +129,17 @@ namespace PersonelKayitProjesi
             baglanti.Close();
             MessageBox.Show("Personel Bilgi Güncellendi");
         }
+
+        private void btnistatistik_Click(object sender, EventArgs e)
+        {
+            Frmİstatistik fr=new Frmİstatistik();
+            fr.Show();
+        }
+
+        private void btngrafikler_Click(object sender, EventArgs e)
+        {
+            FrmGrafikler grfrm=new FrmGrafikler();//grafik formuna yönlendiriyor.
+            grfrm.Show();
+        }
     }
 }

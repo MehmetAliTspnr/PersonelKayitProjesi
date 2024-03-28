@@ -8,3 +8,5 @@ C:\Users\ASUS\source\repos\PersonelKayitProjesi\PersonelKayitProjesi\obj\Debug\P
 C:\Users\ASUS\source\repos\PersonelKayitProjesi\PersonelKayitProjesi\obj\Debug\PersonelKayitProjesi.csproj.CoreCompileInputs.cache
 C:\Users\ASUS\source\repos\PersonelKayitProjesi\PersonelKayitProjesi\obj\Debug\PersonelKayitProjesi.exe
 C:\Users\ASUS\source\repos\PersonelKayitProjesi\PersonelKayitProjesi\obj\Debug\PersonelKayitProjesi.pdb
+C:\Users\ASUS\source\repos\PersonelKayitProjesi\PersonelKayitProjesi\obj\Debug\PersonelKayitProjesi.Frmİstatistik.resources
+C:\Users\ASUS\source\repos\PersonelKayitProjesi\PersonelKayitProjesi\obj\Debug\PersonelKayitProjesi.FrmGrafikler.resources

@@ -257,6 +257,7 @@
             this.btngrafikler.TabIndex = 6;
             this.btngrafikler.Text = "GRAFİKLER";
             this.btngrafikler.UseVisualStyleBackColor = true;
+            this.btngrafikler.Click += new System.EventHandler(this.btngrafikler_Click);
             // 
             // btnistatistik
             // 
@@ -266,6 +267,7 @@
             this.btnistatistik.TabIndex = 5;
             this.btnistatistik.Text = "İSTATİSTİK";
             this.btnistatistik.UseVisualStyleBackColor = true;
+            this.btnistatistik.Click += new System.EventHandler(this.btnistatistik_Click);
             // 
             // btntemizle
             // 
